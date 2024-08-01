@@ -3,9 +3,1094 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
 		<title>Document</title>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script
+			src="https://kit.fontawesome.com/3931c22426.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
-		<div>sds</div>
+		<header class="header_navi">
+			<div class="header_navi-inner">
+				<div class="header_top">
+					<div class="logo">
+						<a href="#"
+							><img src="img/logo.png" alt="samsung_logo"
+						/></a>
+					</div>
+					<div class="utilty_wrap">
+						<div class="utilty_search_button_box">
+							<button type="button" class="search_button">
+								<img src="img/search.png" alt="" />
+							</button>
+						</div>
+						<button type="button" class="cart_button">
+							<img src="img/user.png" alt="" />
+						</button>
+						<button type="button" class="user_button">
+							<img src="img/user.png" alt="" />
+						</button>
+					</div>
+				</div>
+
+				<nav class="menu_wrap">
+					<ul class="menu_list">
+						<li class="menu_item">
+							AI
+							<ul class="sub_menu_list">
+								<li class="sub_menu_item">All for All</li>
+								<li class="sub_menu_item">모든 AI 제품 보기</li>
+								<li class="sub_menu_item">Galaxy AI</li>
+								<li class="sub_menu_item">Samsung AI TV</li>
+								<li class="sub_menu_item">BESPOKE AI</li>
+								<li class="sub_menu_item">
+									세상 편한 AI 라이프
+								</li>
+							</ul>
+						</li>
+						<li class="menu_item">
+							모바일
+							<!-- <ul class="sub_menu_list">
+								<li class="sub_menu_item">갤럭시의 모든 것</li>
+								<li class="sub_menu_item">갤럭시 AI</li>
+								<li class="sub_menu_item">갤럭시 스마트폰</li>
+								<li class="sub_menu_item">갤럭시 탭</li>
+								<li class="sub_menu_item">갤럭시 북</li>
+								<li class="sub_menu_item">갤럭시 워치</li>
+								<li class="sub_menu_item">갤럭시 버즈</li>
+								<li class="sub_menu_item">갤럭시 링</li>
+								<li class="sub_menu_item">갤럭시 액세서리</li>
+								<li class="sub_menu_item">One UI</li>
+								<li class="sub_menu_item">삼성 헬스</li>
+								<li class="sub_menu_item">앱 & 서비스</li>
+								<li class="sub_menu_item">
+									갤럭시가 특별한 이유
+								</li>
+								<li class="sub_menu_item">갤럭시 캠퍼스</li>
+							</ul> -->
+						</li>
+						<li class="menu_item">
+							TV&오디오
+							<!-- <ul class="sub_menu_list">
+								<li class="sub_menu_item">MICRO LED</li>
+								<li class="sub_menu_item">TV</li>
+								<li class="sub_menu_item">라이프스타일 TV</li>
+								<li class="sub_menu_item">무빙스타일</li>
+								<li class="sub_menu_item">
+									삼성 사운드 바ㅣ뮤직 프레임
+								</li>
+								<li class="sub_menu_item">
+									JBLㅣ하만카돈ㅣ마크레빈스
+								</li>
+								<li class="sub_menu_item">
+									TV&오디오 액세서리
+								</li>
+							</ul> -->
+						</li>
+						<li class="menu_item">
+							주방가전
+							<!-- <ul class="sub_menu_list">
+								<li class="sub_menu_item">BESPOKE AI의 모든 것</li>
+								<li class="sub_menu_item">냉장고</li>
+								<li class="sub_menu_item">김치냉장고</li>
+								<li class="sub_menu_item">식기세척기</li>
+								<li class="sub_menu_item">정수기</li>
+								<li class="sub_menu_item">인덕션</li>
+								<li class="sub_menu_item">큐커 멀티/오븐</li>
+								<li class="sub_menu_item">전자레인지</li>
+								<li class="sub_menu_item">후드</li>
+								<li class="sub_menu_item">소형가전</li>
+								<li class="sub_menu_item">주방가전 액세서리</li>
+								<li class="sub_menu_item">데이코</li>
+							</ul> -->
+						</li>
+						<li class="menu_item">
+							리빙가전
+							<!-- <ul class="sub_menu_list">
+								<li class="sub_menu_item">
+									BESPOKE AI의 모든 것
+								</li>
+								<li class="sub_menu_item">세탁건조기</li>
+								<li class="sub_menu_item">세탁기</li>
+								<li class="sub_menu_item">건조기</li>
+								<li class="sub_menu_item">에어드레서</li>
+								<li class="sub_menu_item">슈드레서</li>
+								<li class="sub_menu_item">에어컨</li>
+								<li class="sub_menu_item">시스템에어컨</li>
+								<li class="sub_menu_item">공기청정기/제습기</li>
+								<li class="sub_menu_item">청소기</li>
+								<li class="sub_menu_item">소형가전</li>
+								<li class="sub_menu_item">리빙가전 액세서리</li>
+							</ul> -->
+						</li>
+						<li class="menu_item">
+							PC/주변기기
+							<!-- <ul class="sub_menu_list">
+								<li class="sub_menu_item">갤럭시 북</li>
+								<li class="sub_menu_item">Windows 11</li>
+								<li class="sub_menu_item">데스크탑</li>
+								<li class="sub_menu_item">PC 액세서리</li>
+								<li class="sub_menu_item">모니터</li>
+								<li class="sub_menu_item">프린터</li>
+								<li class="sub_menu_item">토너/잉크</li>
+								<li class="sub_menu_item">메모리/스토리지</li>
+								<li class="sub_menu_item">갤럭시 캠퍼스</li>
+								<li class="sub_menu_item">
+									갤럭시북 다운로드 센터
+								</li>
+							</ul> -->
+						</li>
+						<li class="menu_item">소모품</li>
+						<li class="menu_item">
+							삼성케어플러스
+							<!-- <ul class="sub_menu_list">
+								<li class="sub_menu_item">
+									삼성케어플러스 모바일/PC
+								</li>
+								<li class="sub_menu_item">
+									삼성케어플러스 가전/TV
+								</li>
+							</ul> -->
+						</li>
+						<li class="menu_item">
+							스마트싱스
+							<!-- <ul class="sub_menu_list">
+								<li class="sub_menu_item">
+									한 눈에 보는 스마트싱스
+								</li>
+								<li class="sub_menu_item">스마트싱스 상품</li>
+								<li class="sub_menu_item">스마트싱스 앱</li>
+							</ul> -->
+						</li>
+						<li class="menu_item">
+							삼성닷컴추천
+							<!-- <ul class="sub_menu_list">
+								<li class="sub_menu_item">
+									삼성닷컴추천 모두보기
+								</li>
+								<li class="sub_menu_item">삼성닷컴 단독</li>
+								<li class="sub_menu_item">삼닷 쿨썸머 페스타</li>
+								<li class="sub_menu_item">삼닷 Live</li>
+								<li class="sub_menu_item">삼성케어플러스 가전/TV</li>
+								<li class="sub_menu_item">비스포크스튜디오</li>
+								<li class="sub_menu_item">스토어 진열 할인 제품</li>
+								<li class="sub_menu_item">이벤트 체험존</li>
+							</ul> -->
+						</li>
+						<li class="menu_item">아울렛</li>
+						<li class="menu_item">
+							#Samsung Experience
+							<!-- <ul class="sub_menu_list">
+								<li class="sub_menu_item">
+									#Samsung Experience란?
+								</li>
+								<li class="sub_menu_item">e식품관</li>
+								<li class="sub_menu_item">펫 케어 스토어</li>
+								<li class="sub_menu_item">홈클래스</li>
+								<li class="sub_menu_item">에버랜드 스토어</li>
+							</ul> -->
+						</li>
+						<li class="menu_item right_menu">
+							고객지원
+							<!-- <ul class="sub_menu_list">
+								<li class="sub_menu_item">
+									무엇을 도와드릴까요?
+								</li>
+								<li class="sub_menu_item">제품지원</li>
+								<li class="sub_menu_item">고객서비스 알림</li>
+								<li class="sub_menu_item">서비스센터 찾기</li>
+								<li class="sub_menu_item">갤럭시 수리모드</li>
+							</ul> -->
+						</li>
+						<li class="menu_item right_menu">비즈니스</li>
+						<li class="menu_item right_menu">
+							삼성스토어
+							<!-- <ul class="sub_menu_list">
+								<li class="sub_menu_item">삼성스토어</li>
+								<li class="sub_menu_item">삼성 컬처랩</li>
+								<li class="sub_menu_item">이벤트</li>
+								<li class="sub_menu_item">아파트 입주 상담</li>
+								<li class="sub_menu_item">신규 오픈 스토어</li>
+								<li class="sub_menu_item">스토어 찾기</li>
+								<li class="sub_menu_item">스토어 상담 예약</li>
+								<li class="sub_menu_item">
+									스토어 진열 할인 제품
+								</li>
+							</ul> -->
+						</li>
+						<li class="menu_item right_menu">지속가능경영</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main class="main-container">
+			<div class="main-slide">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="main_img01">
+							<img src="img/main/img01-.jpg" alt="main_img01" />
+							<div class="main-slide-title">
+								<span class="main_slide-img_title"
+									>Galaxy Z Flod6 <br />런칭</span
+								>
+								<p class="main_slide-img_text">
+									자급제와 통신사폰 모두 삼성닷컴에서!
+								</p>
+								<p class="main_slide-img_text">
+									다양한 구매 혜택을 지금 확인해보세요.
+								</p>
+							</div>
+							<div class="main-slide-button">
+								<button type="button" class="more_button">
+									<a href="#"> 더 알아보기</a>
+								</button>
+								<button type="button" class="purchase_button">
+									<a href="#">구매 혜택 보기</a>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="main_img02">
+							<img src="img/main/img02-.jpg" alt="main_img02" />
+							<div class="main-slide-title">
+								<span class="main_slide-img_title"
+									>Galaxy Watch Ultra<br />런칭</span
+								>
+								<p class="main_slide-img_text">
+									극한에 도전하는 역대 최강의 갤럭시 워치
+								</p>
+								<p class="main_slide-img_text">
+									즉시할인 7%의 기회 놓치지 마세요
+								</p>
+							</div>
+							<div class="main-slide-button">
+								<button type="button" class="more_button">
+									<a href="#"> 더 알아보기</a>
+								</button>
+								<button type="button" class="purchase_button">
+									<a href="#">구매 혜택 보기</a>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="main_img03">
+							<img src="img/main/img03--.jpg" alt="main_img03" />
+							<div class="main-slide-title">
+								<span class="main_slide-img_title"
+									>Galaxy Ring<br />런칭</span
+								>
+								<p class="main_slide-img_text">
+									새로운 AI 건강 기능의 시작
+								</p>
+								<p class="main_slide-img_text">
+									내 손가락 위의 가장 작은 건강지킴이
+								</p>
+							</div>
+							<div class="main-slide-button">
+								<button type="button" class="more_button">
+									<a href="#">구매 가이드 보기</a>
+								</button>
+								<button type="button" class="purchase_button">
+									<a href="#">구매 혜택 보기</a>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="main_img04">
+							<img src="img/main/img04-.jpg" alt="main_img04" />
+							<div class="main-slide-title">
+								<span class="main_slide-img_sub_title"
+									>스포츠 경기는 삼성 TV와 함께!</span
+								>
+								<span class="main_slide-img_title"
+									>삼성 AI TV로 바꿔보상</span
+								>
+								<p class="main_slide-img_text">
+									대화면 TV와 함께 우리 집 거실을 경기장으로!
+								</p>
+								<p class="main_slide-img_text">
+									삼성카드로 QLED 삼성닷컴 단독 에디션 결제 시
+									최대 40만원 캐시백
+								</p>
+							</div>
+							<div class="main-slide-button">
+								<button type="button" class="purchase_button">
+									<a href="#">구매 혜택 보기</a>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="main_img05">
+							<img src="img/main/img05--.jpg" alt="main_img05" />
+							<div class="main-slide-title">
+								<span class="main_slide-img_title"
+									>BESPOKE 무풍에어컨<br />올 여름도
+									쾌적하게!</span
+								>
+								<p class="main_slide-img_text">
+									스탠드부터 시스템에어컨까지 다양하게
+									만나보세요
+								</p>
+								<p class="main_slide-img_text">
+									* 시스템에어컨 전문상담 서비스 운영중!
+								</p>
+							</div>
+							<div class="main-slide-button">
+								<button type="button" class="more_button">
+									<a href="#">상담 신청하기</a>
+								</button>
+								<button type="button" class="purchase_button">
+									<a href="#">구매 혜택 보기</a>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="main_img06">
+							<img src="img/main/img06--.jpg" alt="main_img06" />
+							<div class="main-slide-title">
+								<span class="main_slide-img_title"
+									>삼성 AI 냉장고로 바꿔보상</span
+								>
+								<p class="main_slide-img_text">
+									전기료 부담 덜어주는 AI 인버터 컴프레서와 AI
+									절약모드!
+								</p>
+								<p class="main_slide-img_text">
+									냉장고 바꿔보상 전용 특가로 알뜰하게 여름
+									준비하세요!
+								</p>
+							</div>
+							<div class="main-slide-button">
+								<button type="button" class="more_button">
+									<a href="#">이벤트 참여하기</a>
+								</button>
+								<button type="button" class="purchase_button">
+									<a href="#">구매하기</a>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="main_img07">
+							<img src="img/main/img07.jpg" alt="main_img07" />
+							<div class="main-slide-title">
+								<span class="main_slide-img_title"
+									>삼성전자 AI 세일 페스타<br />
+									알림 신청</span
+								>
+								<p class="main_slide-img_text">
+									삼성전자 AI 세일 페스타 알림 신청하고 추가
+									혜택까지 놓치지 마세요!
+								</p>
+								<p class="main_slide-img_text">
+									2024.08.01 Coming Soon
+								</p>
+							</div>
+							<div class="main-slide-button">
+								<button type="button" class="purchase_button">
+									<a href="#">알림 신청하기</a>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--main-slide End-->
+			<section class="product-contents">
+				<div class="product-wrap">
+					<div class="samsung_title_box">
+						<span class="samsung_product_title">새로운 갤럭시</span>
+						<span class="samsung_product_title"
+							>삼닷 쿨썸머 페스타</span
+						>
+
+						<span class="samsung_product_title"
+							>아울렛 인기상품</span
+						>
+						<span class="samsung_product_title"
+							>Samsung Experience</span
+						>
+					</div>
+
+					<article class="samsung_product_box">
+						<div class="newgalaxy_product_box_left">
+							<img src="img/new/img01.png" alt="" />
+						</div>
+						<div class="newgalaxy_product_box_right">
+							<div class="galaxy_watch_ultra_object">
+								<img src="img/new/img02.png" alt="" />
+							</div>
+							<div class="galaxy_ring_object">
+								<img src="img/new/img03.png" alt="" />
+							</div>
+							<div class="galaxy_accessory_object">
+								<img src="img/new/img04.png" alt="" />
+							</div>
+							<div class="galaxy_s24_object">
+								<img src="img/new/img05.png" alt="" />
+							</div>
+						</div>
+					</article>
+					<article class="samsung_product_box">
+						<div class="newgalaxy_product_box_left">
+							<img src="img/new/img01-.png" alt="" />
+						</div>
+						<div class="newgalaxy_product_box_right">
+							<div class="galaxy_watch_ultra_object">
+								<img src="img/new/img02-.png" alt="" />
+							</div>
+							<div class="galaxy_ring_object">
+								<img src="img/new/img03-.png" alt="" />
+							</div>
+							<div class="galaxy_accessory_object">
+								<img src="img/new/img04-.png" alt="" />
+							</div>
+							<div class="galaxy_s24_object">
+								<img src="img/new/img05-.png" alt="" />
+							</div>
+						</div>
+					</article>
+
+					<article class="samsung_product_box">
+						<div class="newgalaxy_product_box_left">
+							<img src="img/new/img01--.png" alt="" />
+						</div>
+						<div class="newgalaxy_product_box_right">
+							<div class="galaxy_watch_ultra_object">
+								<img src="img/new/img02--.png" alt="" />
+							</div>
+							<div class="galaxy_ring_object">
+								<img src="img/new/img03--.png" alt="" />
+							</div>
+							<div class="galaxy_accessory_object">
+								<img src="img/new/img04--.png" alt="" />
+							</div>
+							<div class="galaxy_s24_object">
+								<img src="img/new/img05--.png" alt="" />
+							</div>
+						</div>
+					</article>
+					<article class="samsung_product_box">
+						<div class="newgalaxy_product_box_left">
+							<img src="img/new/img01---.png" alt="" />
+						</div>
+						<div class="newgalaxy_product_box_right">
+							<div class="galaxy_watch_ultra_object">
+								<img src="img/new/img02---.png" alt="" />
+							</div>
+							<div class="galaxy_ring_object">
+								<img src="img/new/img03---.png" alt="" />
+							</div>
+							<div class="galaxy_accessory_object">
+								<img src="img/new/img04---.png" alt="" />
+							</div>
+							<div class="galaxy_s24_object">
+								<img src="img/new/img05---.png" alt="" />
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section class="recommend_product_container">
+				<div class="recommend-contents">
+					<p class="recommend_product_title">
+						당신에게 딱 맞는 추천제품
+					</p>
+
+					<div class="recommend_product_slide">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="recommend_product_slide_img">
+									<a href="#"
+										><img
+											src="img/recommend product/img01.png"
+											alt=""
+									/></a>
+									<p class="recommend_title">갤럭시버즈</p>
+									<div class="recommend-textbox">
+										<div class="recommend_benefit_textbox">
+											<span
+												class="recommend_benefit_price"
+											>
+												혜택가
+											</span>
+											<p class="price">203,600원</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="recommend_product_slide_img">
+									<a href="#"
+										><img
+											src="img/recommend product/img01.png"
+											alt=""
+									/></a>
+									<p class="recommend_title">갤럭시버즈</p>
+									<div class="recommend-textbox">
+										<div class="recommend_benefit_textbox">
+											<span
+												class="recommend_benefit_price"
+											>
+												혜택가
+											</span>
+											<p class="price">203,600원</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="recommend_product_slide_img">
+									<a href="#"
+										><img
+											src="img/recommend product/img01.png"
+											alt=""
+									/></a>
+									<p class="recommend_title">갤럭시버즈</p>
+									<div class="recommend-textbox">
+										<div class="recommend_benefit_textbox">
+											<span
+												class="recommend_benefit_price"
+											>
+												혜택가
+											</span>
+											<p class="price">203,600원</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="recommend_product_slide_img">
+									<a href="#"
+										><img
+											src="img/recommend product/img01.png"
+											alt=""
+									/></a>
+									<p class="recommend_title">갤럭시버즈</p>
+									<div class="recommend-textbox">
+										<div class="recommend_benefit_textbox">
+											<span
+												class="recommend_benefit_price"
+											>
+												혜택가
+											</span>
+											<p class="price">203,600원</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="samsung_pc-contents">
+				<span class="box_title">모바일 & PC</span>
+				<div class="box_menu">
+					<ul class="samsung_pc_box_title">
+						<li class="pc_product_title">
+							<a href="#">Galaxy 바꿔보상</a>
+						</li>
+						<li class="pc_product_title">
+							<a href="#">Galaxy Ring</a>
+						</li>
+						<li class="pc_product_title">
+							<a href="#">Galaxy Watch Ultra</a>
+						</li>
+						<li class="pc_product_title">
+							<a href="#">Galaxy Tab S9 Series</a>
+						</li>
+						<li class="pc_product_title">
+							<a href="#">Galaxy Book4 Series</a>
+						</li>
+						<li class="pc_product_title">
+							<a href="#">갤럭시 캠퍼스</a>
+						</li>
+					</ul>
+				</div>
+
+				<article class="samsung_pc_box_visual">
+					<div class="samsung_pc-visual_img">
+						<a href="#"
+							><img src="img/mobile&pc/img01.jpg" alt=""
+						/></a>
+					</div>
+					<div class="samsung_pc_visual_textbox">
+						<p class="title">Galaxy Z Fold6 I Z Flip6 바꿔보상</p>
+						<p class="sub_text">
+							갤럭시 Z 폴드 반납 시 최대 110만원 보상<br />
+							지금, 기대 이상의 보상가를 확인하세요
+						</p>
+
+						<div class="samsung_pc_btns">
+							<button type="button" class="btn_item">
+								<a href="#">바꿔보상 알아보기</a>
+							</button>
+							<button type="button" class="purchase_button">
+								<a href="#">구매 혜택 보기</a>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="samsung_pc_box_visual">
+					<div class="samsung_pc-visual_img">
+						<img src="img/mobile&pc/img02.jpg" alt="" />
+					</div>
+					<div class="samsung_pc_visual_textbox">
+						<p class="title">Galaxy Ring 런칭</p>
+						<p class="sub_text">
+							새로운 AI 건강 기능의 시작<br />
+							내 손가락 위의 가장 작은 건강지킴이
+						</p>
+
+						<div class="samsung_pc_btns">
+							<button type="button" class="btn_item">
+								<a href="#">구매 가이드 보기</a>
+							</button>
+							<button type="button" class="purchase_button">
+								<a href="#">구매 혜택 보기</a>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="samsung_pc_box_visual">
+					<div class="samsung_pc-visual_img">
+						<img src="img/mobile&pc/img03.jpg" alt="" />
+					</div>
+					<div class="samsung_pc_visual_textbox">
+						<p class="title">Galaxy Watch Ultra 런칭</p>
+						<p class="sub_text">
+							극한의 도전하는 역대 최강의 갤럭시 워치<br />
+							즉시할인 7%의 기회 놓치지 마세요
+						</p>
+
+						<div class="samsung_pc_btns">
+							<button type="button" class="btn_item">
+								<a href="#">더 알아보기</a>
+							</button>
+							<button type="button" class="purchase_button">
+								<a href="#">구매 혜택 보기</a>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="samsung_pc_box_visual">
+					<div class="samsung_pc-visual_img">
+						<img src="img/mobile&pc/img04.jpg" alt="" />
+					</div>
+					<div class="samsung_pc_visual_textbox">
+						<p class="title">Galaxy AI로 바꿔보상</p>
+						<p class="sub_text">
+							즉시할인 최대 31만원 + 신용카드 결제일할인<br />
+							해피머니 온라인 상품권 교환권 3만원 증정 혜택!
+						</p>
+
+						<div class="samsung_pc_btns">
+							<button type="button" class="purchase_button">
+								<a href="#">구매 혜택 보기</a>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="samsung_pc_box_visual">
+					<div class="samsung_pc-visual_img">
+						<img src="img/mobile&pc/img05.jpg" alt="" />
+					</div>
+					<div class="samsung_pc_visual_textbox">
+						<p class="title">Galaxy Book4 Series</p>
+						<p class="sub_text">
+							삼성닷컴 단독 N페이 쿠폰 최대 15만P + 최대28%
+							즉시할인
+						</p>
+
+						<div class="samsung_pc_btns">
+							<button type="button" class="purchase_button">
+								<a href="#">구매 혜택 보기</a>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="samsung_pc_box_visual">
+					<div class="samsung_pc-visual_img">
+						<img src="img/mobile&pc/img06.jpg" alt="" />
+					</div>
+					<div class="samsung_pc_visual_textbox">
+						<p class="title">갤럭시 캠퍼스</p>
+						<p class="sub_text">
+							갤럭시 Z 폴드6ㅣZ 플립6를<br />
+							갤캠스 단독 교육할인가로 만나보세요
+						</p>
+
+						<div class="samsung_pc_btns">
+							<button type="button" class="purchase_button">
+								<a href="#">더 알아보기</a>
+							</button>
+						</div>
+					</div>
+				</article>
+			</section>
+			<!--pc contents End-->
+			<section class="samsung_tv-contents">
+				<span class="box_title">TV & 오디오</span>
+				<div class="box_menu">
+					<ul class="samsung_tv_box_title">
+						<li class="tv_product_title">
+							<a href="#">Neo QLED 8K</a>
+						</li>
+						<li class="tv_product_title">
+							<a href="#">삼성 OLED</a>
+						</li>
+						<li class="tv_product_title">
+							<a href="#">The Frame</a>
+						</li>
+						<li class="tv_product_title">
+							<a href="#">스마트모니터</a>
+						</li>
+						<li class="tv_product_title">
+							<a href="#">Q시리즈사운드바</a>
+						</li>
+					</ul>
+				</div>
+
+				<article class="samsung_tv_box_visual">
+					<div class="samsung_tv-visual_img">
+						<img src="img/tv&Audio/img01.jpg" alt="" />
+					</div>
+					<div class="samsung_tv_visual_textbox">
+						<p class="title">Neo QLED 8K</p>
+						<p class="sub_text">
+							2세대 AI 8K 프로세서가 선사하는 궁극의 시청
+							경험을<br />
+							삼성 AI TV로 바꿔보상 혜택과 함께 만나보세요
+						</p>
+
+						<div class="samsung_tv_btns">
+							<button type="button" class="purchase_button">
+								<a href="#">구매 혜택 보기</a>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="samsung_tv_box_visual">
+					<div class="samsung_tv-visual_img">
+						<img src="img/tv&Audio/img02.jpg" alt="" />
+					</div>
+					<div class="samsung_tv_visual_textbox">
+						<p class="title">OLED</p>
+						<p class="sub_text">
+							세상의 색을 새롭게 보는 OLED<br />
+							삼성 AI TV로 바꿔보상 혜택과 함께 만나보세요
+						</p>
+
+						<div class="samsung_tv_btns">
+							<button type="button" class="purchase_button">
+								<a href="#">구매 혜택 보기</a>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="samsung_tv_box_visual">
+					<div class="samsung_tv-visual_img">
+						<img src="img/tv&Audio/img03.jpg" alt="" />
+					</div>
+					<div class="samsung_tv_visual_textbox">
+						<p class="title">The Frame</p>
+						<p class="sub_text">
+							나만의 갤러리를 완성하는 아트 TV<br />
+							삼성 AI TV로 바꿔보상 혜택과 함께 만나보세요
+						</p>
+
+						<div class="samsung_tv_btns">
+							<button type="button" class="purchase_button">
+								<a href="#">구매 혜택 보기</a>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="samsung_tv_box_visual">
+					<div class="samsung_tv-visual_img">
+						<img src="img/tv&Audio/img04.jpg" alt="" />
+					</div>
+					<div class="samsung_tv_visual_textbox">
+						<p class="title">
+							스마트 모니터 삼성닷컴 단독 에디션 런칭
+						</p>
+						<p class="sub_text">
+							삼성닷컴 단독 출시 기념<br />
+							쿠폰 할인 + 멤버십 포인트 적립 혜택
+						</p>
+
+						<div class="samsung_tv_btns">
+							<button type="button" class="purchase_button">
+								<a href="#">구매 혜택 보기</a>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="samsung_tv_box_visual">
+					<div class="samsung_tv-visual_img">
+						<img src="img/tv&Audio/img05.jpg" alt="" />
+					</div>
+					<div class="samsung_tv_visual_textbox">
+						<p class="title">Q시리즈사운드바</p>
+						<p class="sub_text">
+							압도적 몰입갑의 홈시네마를 Q시리즈 사운드바로
+							완성해보세요
+						</p>
+
+						<div class="samsung_tv_btns">
+							<button type="button" class="purchase_button">
+								<a href="#">구매 혜택 보기</a>
+							</button>
+						</div>
+					</div>
+				</article>
+			</section>
+			<section class="samsung_appliances-contents">
+				<span class="box_title">가전</span>
+				<div class="box_menu">
+					<ul class="samsung_appliances_box_title">
+						<li class="appliances_product_title">
+							<a href="#">BESPOKE 그랑데 AI</a>
+						</li>
+						<li class="appliances_product_title">
+							<a href="#">BESPOKE 무풍갤러리</a>
+						</li>
+						<li class="appliances_product_title">
+							<a href="#">BESPOKE AI 하이브리드</a>
+						</li>
+						<li class="appliances_product_title">
+							<a href="#">BESPOKE 스팀</a>
+						</li>
+						<li class="appliances_product_title">
+							<a href="#">BESPOKE 주방가전</a>
+						</li>
+						<li class="appliances_product_title">
+							<a href="#">BESPOKE 공기청정기</a>
+						</li>
+					</ul>
+				</div>
+
+				<article class="samsung_appliances_box_visual">
+					<div class="samsung_appliances-visual_img">
+						<img src="img/appliances/img01.jpg" alt="" />
+					</div>
+					<div class="samsung_appliances_visual_textbox">
+						<p class="title">
+							BESPOKE 그랑데 AI 의류케어 장마대비 특별전
+						</p>
+						<p class="sub_text">
+							습한 여름 축축한 빨래는 이제 그만!<br />
+							건조기 특가로 우리 집을 쾌적하게 만들어보세요
+						</p>
+
+						<div class="samsung_appliances_btns">
+							<button type="button" class="purchase_button">
+								<a href="#">구매 혜택 보기</a>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="samsung_appliances_box_visual">
+					<div class="samsung_appliances-visual_img">
+						<img src="img/appliances/img02.jpg" alt="" />
+					</div>
+					<div class="samsung_appliances_visual_textbox">
+						<p class="title_black">
+							무더위 탈출은 삼성 무풍에어컨으로
+						</p>
+						<p class="sub_text_black">
+							최대 40만원 쿠폰 할인과 무상수리 서비스 혜택으로<br />
+							시원한 여름을 준비하세요
+						</p>
+
+						<div class="samsung_appliances_btns">
+							<button type="button" class="purchase_button_black">
+								<a href="#">구매 혜택 보기</a>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="samsung_appliances_box_visual">
+					<div class="samsung_appliances-visual_img">
+						<img src="img/appliances/img03.jpg" alt="" />
+					</div>
+					<div class="samsung_appliances_visual_textbox">
+						<p class="title">BESPOKE AI 하이브리드</p>
+						<p class="sub_text">
+							AI 인버터 컴프레서와 AI 절약모드로<br />
+							전기료 부담 줄여 알뜰하게 준비하는 여름
+						</p>
+
+						<div class="samsung_appliances_btns">
+							<button type="button" class="purchase_button">
+								<a href="#">구매 혜택 보기</a>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="samsung_appliances_box_visual">
+					<div class="samsung_appliances-visual_img">
+						<img src="img/appliances/img04.jpg" alt="" />
+					</div>
+					<div class="samsung_appliances_visual_textbox">
+						<p class="title">BESPOKE 스팀</p>
+						<p class="sub_text">
+							먼지통까지 자동으로 비워주는 BESPOKE 스팀으로<br />
+							무더운 여름을 더욱 편하게 보내보세요
+						</p>
+
+						<div class="samsung_appliances_btns">
+							<button type="button" class="purchase_button">
+								<a href="#">구매 혜택 보기</a>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="samsung_appliances_box_visual">
+					<div class="samsung_appliances-visual_img">
+						<img src="img/appliances/img05.jpg" alt="" />
+					</div>
+					<div class="samsung_appliances_visual_textbox">
+						<p class="title_black">
+							BESPOKE 주방가전<br />
+							인′식 바꿈 특별전
+						</p>
+						<p class="sub_text_black">
+							인덕션과 식기세척지로 완성하는 주방 톤앤매너<br />
+							인′식 패키지 구매시 최대 75만원 할인 혜택까지!
+						</p>
+
+						<div class="samsung_appliances_btns">
+							<button type="button" class="purchase_button_black">
+								<a href="#">구매 혜택 보기</a>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="samsung_appliances_box_visual">
+					<div class="samsung_appliances-visual_img">
+						<img src="img/appliances/img06.jpg" alt="" />
+					</div>
+					<div class="samsung_appliances_visual_textbox">
+						<p class="title_black">BESPOKE 실내 케어 기획전</p>
+						<p class="sub_text_black">
+							공기청정부터 제습까지!<br />
+							BESPOKE 실내 케어로 해결해보세요
+						</p>
+
+						<div class="samsung_appliances_btns">
+							<button type="button" class="purchase_button_black">
+								<a href="#">구매 혜택 보기</a>
+							</button>
+						</div>
+					</div>
+				</article>
+			</section>
+
+			<section class="galaxy_story-contents">
+				<div class="galaxy_story-inner">
+					<div class="story_box_head">
+						<ul class="box_head_textbox">
+							<li class="box_head_title">
+								<a href="#">스토리</a>
+							</li>
+							<li class="box_head_title">
+								<a href="#">#DoWhatYouCant</a>
+							</li>
+						</ul>
+					</div>
+
+					<article class="samsung_story_img_box_content">
+						<div class="samsung_stroy_img_box">
+							<img src="img/story/img01.jpg" alt="" />
+						</div>
+
+						<div class="samsung_story_textbox">
+							<p class="title">
+								01 #삼성 갤럭시와 함께 Open always wins
+							</p>
+
+							<div class="story_more_btns">
+								<button type="button" class="story_more_button">
+									<a href="#">더 알아보기</a>
+								</button>
+							</div>
+						</div>
+					</article>
+					<article class="samsung_story_img_box_content">
+						<div class="samsung_stroy_img_box">
+							<img src="img/story/img02.jpg" alt="" />
+						</div>
+
+						<div class="samsung_story_textbox">
+							<p class="title">
+								02 #더 프레임으로 더 기분 좋은 우리 집 만들기
+							</p>
+
+							<div class="story_more_btns">
+								<button type="button" class="story_more_button">
+									<a href="#">더 알아보기</a>
+								</button>
+							</div>
+						</div>
+					</article>
+					<article class="samsung_story_img_box_content">
+						<div class="samsung_stroy_img_box">
+							<img src="img/story/img03.jpg" alt="" />
+						</div>
+
+						<div class="samsung_story_textbox">
+							<p class="title">
+								03 #갤럭시 Z 플립5 메종 마르지엘라 에디션
+							</p>
+
+							<div class="story_more_btns">
+								<button type="button" class="story_more_button">
+									<a href="#">더 알아보기</a>
+								</button>
+							</div>
+						</div>
+					</article>
+					<article class="samsung_story_img_box_content">
+						<div class="samsung_stroy_img_box">
+							<img src="img/story/img04.jpg" alt="" />
+						</div>
+
+						<div class="samsung_story_textbox">
+							<p class="title">
+								04 #뛰어난 디자인과 기술로 모두를 사로잡은
+								삼성의 수상 제품을 만나보세요
+							</p>
+
+							<div class="story_more_btns">
+								<button type="button" class="story_more_button">
+									<a href="#">더 알아보기</a>
+								</button>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+		</main>
+		<script src="./js/main.js"></script>
 	</body>
 </html>
