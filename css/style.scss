@@ -1,6 +1,130 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@400;600;700;&display=swap");
 
+@mixin main-common-title() {
+	position: absolute;
+	top: 350px;
+	left: 150px;
+	font-family: "Nanum Gothic", sans-serif;
+	font-size: 43px;
+	font-weight: 700;
+	letter-spacing: -2px;
+	color: #000;
+}
+@mixin main-common-text() {
+	position: absolute;
+	top: 490px;
+	left: 150px;
+	font-size: 14px;
+	font-family: "Nanum Gothic", sans-serif;
+	font-weight: 400;
+	letter-spacing: -1px;
+	color: #000;
+}
+
+@mixin common-more_text_btn() {
+	position: absolute;
+	top: 575px;
+	left: 150px;
+	font-family: "Nanum Gothic", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: -1px;
+	width: 65px;
+	border: 0;
+	background-color: transparent;
+	border-bottom: 2px solid #000;
+	color: #000;
+	cursor: pointer;
+}
+
+@mixin common-btn($width: 150px, $height: 300px, $bg-color: #000) {
+	position: absolute;
+	top: 568px;
+	left: 230px;
+	$width: width;
+	$height: height;
+	background-color: $bg-color;
+	border-radius: 23px;
+	border: none;
+	font-family: "Nanum Gothic", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: -1px;
+	color: #fff;
+	text-align: center;
+	padding: 7px 14px;
+	cursor: pointer;
+}
+@mixin buy_common-center_btn($width: 150px, $height: 300px, $bg-color: #000) {
+	position: absolute;
+	top: 650px;
+	left: 50%;
+	transform: translateX(-50%);
+	$width: width;
+	$height: height;
+	background-color: $bg-color;
+	border-radius: 23px;
+	border: none;
+	font-family: "Nanum Gothic", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: -1px;
+	color: #fff;
+	text-align: center;
+	padding: 7px 14px;
+	cursor: pointer;
+}
+@mixin section-common-text() {
+	font-family: "Nanum Gothic", sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: -1px;
+	display: inline-block;
+	padding: 40px 0;
+	color: #353535;
+}
+@mixin section-common-title() {
+	font-family: "Nanum Gothic", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: -1px;
+	text-align: center;
+	color: #353535;
+}
+
+@mixin visual_common_title() {
+	position: absolute;
+	left: 50%;
+	top: 570px;
+	transform: translateX(-50%);
+	font-family: "Nanum Gothic", sans-serif;
+	font-size: 45px;
+	font-weight: 600;
+	letter-spacing: -2px;
+}
+
+// @mixin visual_common_title() {
+// 	font-family: "Nanum Gothic", sans-serif;
+// 	font-size: 25px;
+// 	font-weight: 600;
+// 	letter-spacing: -2px;
+// 	border-bottom: 2px solid #000;
+// }
+
+@mixin visual_common_subtext() {
+	position: absolute;
+	left: 50%;
+	top: 640px;
+	transform: translateX(-50%);
+	text-align: center;
+	font-family: "Nanum Gothic", sans-serif;
+	font-size: 19px;
+	font-weight: 400;
+	letter-spacing: -1px;
+	line-height: 28px;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -121,121 +245,6 @@ a {
 			}
 		}
 	}
-}
-
-@mixin main-common-title() {
-	position: absolute;
-	top: 350px;
-	left: 150px;
-	font-family: "Nanum Gothic", sans-serif;
-	font-size: 43px;
-	font-weight: 700;
-	letter-spacing: -2px;
-	color: #000;
-}
-@mixin main-common-text() {
-	position: absolute;
-	top: 490px;
-	left: 150px;
-	font-size: 14px;
-	font-family: "Nanum Gothic", sans-serif;
-	font-weight: 400;
-	letter-spacing: -1px;
-	color: #000;
-}
-
-@mixin common-more_text_btn() {
-	position: absolute;
-	top: 575px;
-	left: 150px;
-	font-family: "Nanum Gothic", sans-serif;
-	font-size: 12px;
-	font-weight: 600;
-	letter-spacing: -1px;
-	width: 65px;
-	border: 0;
-	background-color: transparent;
-	border-bottom: 2px solid #000;
-	color: #000;
-	cursor: pointer;
-}
-
-@mixin common-btn($width: 150px, $height: 300px, $bg-color: #000) {
-	position: absolute;
-	top: 568px;
-	left: 230px;
-	$width: width;
-	$height: height;
-	background-color: $bg-color;
-	border-radius: 23px;
-	border: none;
-	font-family: "Nanum Gothic", sans-serif;
-	font-size: 12px;
-	font-weight: 600;
-	letter-spacing: -1px;
-	color: #fff;
-	text-align: center;
-	padding: 7px 14px;
-	cursor: pointer;
-}
-@mixin buy_common-center_btn($width: 150px, $height: 300px, $bg-color: #000) {
-	position: absolute;
-	top: 650px;
-	left: 50%;
-	transform: translateX(-50%);
-	$width: width;
-	$height: height;
-	background-color: $bg-color;
-	border-radius: 23px;
-	border: none;
-	font-family: "Nanum Gothic", sans-serif;
-	font-size: 12px;
-	font-weight: 600;
-	letter-spacing: -1px;
-	color: #fff;
-	text-align: center;
-	padding: 7px 14px;
-	cursor: pointer;
-}
-@mixin section-common-text() {
-	font-family: "Nanum Gothic", sans-serif;
-	font-size: 14px;
-	font-weight: 600;
-	letter-spacing: -1px;
-	display: inline-block;
-	padding: 40px 0;
-	color: #353535;
-}
-@mixin section-common-title() {
-	font-family: "Nanum Gothic", sans-serif;
-	font-size: 20px;
-	font-weight: 600;
-	letter-spacing: -1px;
-	text-align: center;
-	color: #353535;
-}
-
-@mixin visual_common_title() {
-	position: absolute;
-	left: 50%;
-	top: 570px;
-	transform: translateX(-50%);
-	font-family: "Nanum Gothic", sans-serif;
-	font-size: 45px;
-	font-weight: 600;
-	letter-spacing: -2px;
-}
-@mixin visual_common_subtext() {
-	position: absolute;
-	left: 50%;
-	top: 640px;
-	transform: translateX(-50%);
-	text-align: center;
-	font-family: "Nanum Gothic", sans-serif;
-	font-size: 19px;
-	font-weight: 400;
-	letter-spacing: -2px;
-	line-height: 28px;
 }
 
 .main-container {
@@ -473,6 +482,7 @@ a {
 				display: flex;
 				margin: 0 auto;
 				justify-content: space-between;
+
 				.samsung_product_title {
 					@include section-common-text();
 					cursor: pointer;
@@ -518,18 +528,18 @@ a {
 			}
 		}
 	}
-	.recommend_product_container {
+	.product_recommend_contents {
 		width: 100%;
 		height: 400px;
 		background-color: #fff;
 		position: relative;
-		.recommend-contents {
+		.container {
 			.recommend_product_title {
 				@include section-common-title();
 				padding-top: 60px;
 				text-align: center;
 			}
-			.recommend_product_slide {
+			.product_recommend_promotion {
 				width: 1400px;
 				margin: 30px auto;
 				overflow: hidden;
@@ -537,28 +547,83 @@ a {
 					.swiper-slide {
 						display: flex;
 						align-items: center;
-						.recommend_product_slide_img {
+						.product_recommend_box {
 							border-radius: 20px;
-							background-color: #e5e5e5;
+							background-color: #f7f7f7;
 							width: 320px;
 							height: 200px;
 							display: flex;
-						}
-						.recommend_title {
-							color: #ff759c;
-							text-align: left;
-						}
-						.recommend-textbox .recommend_benefit_textbox {
-							display: flex;
-							.recommend_benefit_price {
-								font: 18px/1 "Gmarket_M", sans-serif;
-								color: #595959;
+							.product_recommend_title {
+								width: 150px;
+								height: 50px;
+								font-family: "Noto Sans", sans-serif;
+								font-size: 17px;
+								font-weight: 600;
+								font-optical-sizing: auto;
+								color: #343434;
+
+								display: inline-block;
 								margin-top: 30px;
 							}
-							.price {
-								font: 15px/1 "Gmarket_M", sans-serif;
-								color: #595959;
+							.product_recommend_textbox {
+								color: #8d8d8d;
+								// border-bottom: 2px solid #ff759c;
+								padding-bottom: 30px;
 								margin-top: 30px;
+								.product_benefit {
+									display: flex;
+									font-family: "Noto Sans", sans-serif;
+									font-size: 14px;
+									color: #c0c0c0;
+									line-height: 30px;
+									margin-top: 30px;
+									word-break: keep-all;
+									display: flex;
+
+									.product_benefit_text {
+										font-family: "Noto Sans", sans-serif;
+										font-size: 13px;
+										font-weight: 400;
+										color: #404040;
+										line-height: 30px;
+										margin-top: 30px;
+										word-break: keep-all;
+										display: flex;
+									}
+									.product_benefit_price {
+										font-family: "Noto Sans", sans-serif;
+										font-size: 17px;
+										color: #2b8bf1;
+										font-weight: 600;
+										line-height: 30px;
+										margin-top: 30px;
+										word-break: keep-all;
+									}
+								}
+								.product_point {
+									font-family: "Noto Sans", sans-serif;
+									font-size: 13px;
+									color: #838383;
+									line-height: 30px;
+									word-break: keep-all;
+									display: flex;
+									.product_point_text {
+										font-family: "Noto Sans", sans-serif;
+										font-size: 13px;
+										color: #787777;
+										line-height: 30px;
+										font-weight: 400;
+										word-break: keep-all;
+									}
+									.product_point_price {
+										font-family: "Noto Sans", sans-serif;
+										font-size: 13px;
+										color: #666666;
+										line-height: 30px;
+										font-weight: 600;
+										word-break: keep-all;
+									}
+								}
 							}
 						}
 					}
@@ -567,7 +632,9 @@ a {
 		}
 	}
 
-	.recommend_product_slide .swiper-horizontal > .swiper-pagination-bullets,
+	.product_recommend_promotion
+		.swiper-horizontal
+		> .swiper-pagination-bullets,
 	.swiper-pagination-bullets.swiper-pagination-horizontal,
 	.swiper-pagination-custom,
 	.swiper-pagination-fraction {
@@ -579,6 +646,7 @@ a {
 		height: 810px;
 		background-color: #d9fee5;
 		position: relative;
+
 		.box_title {
 			@include section-common-title();
 			font-size: 25px;
@@ -586,7 +654,7 @@ a {
 			top: 50px;
 			left: 50%;
 			transform: translate(-50%, 0);
-			z-index: 1;
+			z-index: 3;
 		}
 		.box_menu {
 			width: 1400px;
@@ -594,6 +662,7 @@ a {
 			position: absolute;
 			top: 100px;
 			left: 150px;
+			z-index: 3;
 
 			.samsung_pc_box_title {
 				width: 1100px;
@@ -609,8 +678,9 @@ a {
 			}
 		}
 
-		.samsung_pc_box_visual {
+		.galaxy_z_flip_samsung_pc_box_visual {
 			position: relative;
+			z-index: 2;
 			.samsung_pc-visual_img {
 				img {
 					position: absolute;
@@ -641,6 +711,179 @@ a {
 						position: absolute;
 						top: 723px;
 						left: 860px;
+					}
+				}
+			}
+		}
+		.galaxy_ring_samsung_pc_box_visual {
+			position: relative;
+			.samsung_pc-visual_img {
+				img {
+					position: absolute;
+					top: 0;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+			.samsung_pc_visual_textbox {
+				.title {
+					@include visual_common_title();
+				}
+				.sub_text {
+					@include visual_common_subtext();
+				}
+				.samsung_pc_btns {
+					position: relative;
+
+					.btn_item {
+						@include common-more_text_btn();
+						width: 90px;
+						position: absolute;
+						top: 730px;
+						left: 740px;
+					}
+					.purchase_button {
+						@include common-btn();
+						position: absolute;
+						top: 723px;
+						left: 860px;
+					}
+				}
+			}
+		}
+		.watch_ultra_samsung_pc_box_visual {
+			position: relative;
+			.samsung_pc-visual_img {
+				img {
+					position: absolute;
+					top: 0;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+			.samsung_pc_visual_textbox {
+				.title {
+					@include visual_common_title();
+				}
+				.sub_text {
+					@include visual_common_subtext();
+				}
+				.samsung_pc_btns {
+					position: relative;
+
+					.btn_item {
+						@include common-more_text_btn();
+						width: 70px;
+						position: absolute;
+						top: 730px;
+						left: 750px;
+					}
+					.purchase_button {
+						@include common-btn();
+						position: absolute;
+						top: 723px;
+						left: 845px;
+					}
+				}
+			}
+		}
+		.tab_s9_samsung_pc_box_visual {
+			position: relative;
+			.samsung_pc-visual_img {
+				img {
+					position: absolute;
+					top: 0;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+			.samsung_pc_visual_textbox {
+				.title {
+					@include visual_common_title();
+				}
+				.sub_text {
+					@include visual_common_subtext();
+				}
+				.samsung_pc_btns {
+					position: relative;
+
+					.btn_item {
+						@include common-more_text_btn();
+						width: 70px;
+						position: absolute;
+						top: 730px;
+						left: 750px;
+					}
+					.purchase_button {
+						@include common-btn();
+						position: absolute;
+						top: 723px;
+						left: 50%;
+						transform: translateX(-50%);
+					}
+				}
+			}
+		}
+		.galaxy_book4_samsung_pc_box_visual {
+			position: relative;
+			.samsung_pc-visual_img {
+				img {
+					position: absolute;
+					top: 0;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+			.samsung_pc_visual_textbox {
+				.title {
+					@include visual_common_title();
+					position: absolute;
+					top: 610px;
+				}
+				.sub_text {
+					@include visual_common_subtext();
+					position: absolute;
+					top: 682px;
+				}
+				.samsung_pc_btns {
+					position: relative;
+
+					.purchase_button {
+						@include common-btn();
+						position: absolute;
+						top: 735px;
+						left: 50%;
+						transform: translateX(-50%);
+					}
+				}
+			}
+		}
+		.galaxy_campus_samsung_pc_box_visual {
+			position: relative;
+			.samsung_pc-visual_img {
+				img {
+					position: absolute;
+					top: 0;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+			.samsung_pc_visual_textbox {
+				.title {
+					@include visual_common_title();
+				}
+				.sub_text {
+					@include visual_common_subtext();
+				}
+				.samsung_pc_btns {
+					position: relative;
+
+					.purchase_button {
+						@include common-btn();
+						position: absolute;
+						top: 723px;
+						left: 50%;
+						transform: translateX(-50%);
 					}
 				}
 			}
@@ -685,7 +928,7 @@ a {
 		}
 	}
 
-	.samsung_tv_box_visual {
+	.neo_qled_samsung_tv_box_visual {
 		position: relative;
 		.samsung_tv-visual_img {
 			img {
@@ -710,7 +953,145 @@ a {
 				.purchase_button {
 					@include common-btn();
 					position: absolute;
-					top: 700px;
+					top: 725px;
+					left: 50%;
+					transform: translateX(-50%);
+					background-color: #fff;
+					color: #000;
+				}
+			}
+		}
+	}
+	.samsung_oled_samsung_tv_box_visual {
+		position: relative;
+		.samsung_tv-visual_img {
+			img {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+		.samsung_tv_visual_textbox {
+			.title {
+				@include visual_common_title();
+				color: #fff;
+			}
+			.sub_text {
+				@include visual_common_subtext();
+				color: #fff;
+			}
+			.samsung_tv_btns {
+				position: relative;
+
+				.purchase_button {
+					@include common-btn();
+					position: absolute;
+					top: 725px;
+					left: 50%;
+					transform: translateX(-50%);
+					background-color: #fff;
+					color: #000;
+				}
+			}
+		}
+	}
+	.theframe_samsung_tv_box_visual {
+		position: relative;
+		.samsung_tv-visual_img {
+			img {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+		.samsung_tv_visual_textbox {
+			.title {
+				@include visual_common_title();
+				color: #fff;
+			}
+			.sub_text {
+				@include visual_common_subtext();
+				color: #fff;
+			}
+			.samsung_tv_btns {
+				position: relative;
+
+				.purchase_button {
+					@include common-btn();
+					position: absolute;
+					top: 725px;
+					left: 50%;
+					transform: translateX(-50%);
+					background-color: #fff;
+					color: #000;
+				}
+			}
+		}
+	}
+	.smart_monitor_samsung_tv_box_visual {
+		position: relative;
+		.samsung_tv-visual_img {
+			img {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+		.samsung_tv_visual_textbox {
+			.title {
+				@include visual_common_title();
+				color: #000;
+			}
+			.sub_text {
+				@include visual_common_subtext();
+				color: #000;
+			}
+			.samsung_tv_btns {
+				position: relative;
+
+				.purchase_button {
+					@include common-btn();
+					position: absolute;
+					top: 725px;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+		}
+	}
+	.q_series_samsung_tv_box_visual {
+		position: relative;
+		.samsung_tv-visual_img {
+			img {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+		.samsung_tv_visual_textbox {
+			.title {
+				@include visual_common_title();
+				position: absolute;
+				top: 610px;
+				color: #fff;
+			}
+			.sub_text {
+				@include visual_common_subtext();
+				position: absolute;
+				top: 682px;
+				color: #fff;
+			}
+			.samsung_tv_btns {
+				position: relative;
+
+				.purchase_button {
+					@include common-btn();
+					position: absolute;
+					top: 735px;
 					left: 50%;
 					transform: translateX(-50%);
 					background-color: #fff;
@@ -728,7 +1109,7 @@ a {
 	position: relative;
 	.box_title {
 		@include section-common-title();
-		color: #fff;
+		color: #000;
 		font-size: 25px;
 		position: absolute;
 		top: 50px;
@@ -751,14 +1132,14 @@ a {
 
 			.appliances_product_title {
 				@include section-common-title();
-				color: #fff;
+				color: #000;
 				font-size: 19px;
 				z-index: 1;
 			}
 		}
 	}
 
-	.samsung_appliances_box_visual {
+	.bespoke_ai_samsung_appliances_box_visual {
 		position: relative;
 		.samsung_appliances-visual_img {
 			img {
@@ -771,11 +1152,14 @@ a {
 		.samsung_appliances_visual_textbox {
 			.title {
 				@include visual_common_title();
-				color: #fff;
+				position: absolute;
+				top: 587px;
+				text-align: center;
 			}
 			.sub_text {
 				@include visual_common_subtext();
-				color: #fff;
+				position: absolute;
+				top: 560px;
 			}
 			.samsung_appliances_btns {
 				position: relative;
@@ -783,11 +1167,9 @@ a {
 				.purchase_button {
 					@include common-btn();
 					position: absolute;
-					top: 700px;
+					top: 730px;
 					left: 50%;
 					transform: translateX(-50%);
-					background-color: #fff;
-					color: #000;
 				}
 			}
 		}
@@ -815,10 +1197,185 @@ a {
 			}
 		}
 	}
+	.airconditioner_samsung_appliances_box_visual {
+		position: relative;
+		.samsung_appliances-visual_img {
+			img {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+		.samsung_appliances_visual_textbox {
+			.title {
+				@include visual_common_title();
+				top: 580px;
+				text-align: center;
+				color: #fff;
+			}
+			.sub_text {
+				@include visual_common_subtext();
+				top: 650px;
+			}
+			.samsung_appliances_btns {
+				position: relative;
+
+				.purchase_button {
+					@include common-btn();
+					position: absolute;
+					top: 730px;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+		}
+	}
+	.hybrid_samsung_appliances_box_visual {
+		position: relative;
+		.samsung_appliances-visual_img {
+			img {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+		.samsung_appliances_visual_textbox {
+			.title {
+				@include visual_common_title();
+				top: 580px;
+				text-align: center;
+				color: #fff;
+			}
+			.sub_text {
+				@include visual_common_subtext();
+				top: 650px;
+				color: #fff;
+			}
+			.samsung_appliances_btns {
+				position: relative;
+
+				.purchase_button {
+					@include common-btn();
+					position: absolute;
+					top: 730px;
+					left: 50%;
+					transform: translateX(-50%);
+					background-color: #fff;
+					color: #000;
+				}
+			}
+		}
+	}
+	.steam_samsung_appliances_box_visual {
+		position: relative;
+		.samsung_appliances-visual_img {
+			img {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+		.samsung_appliances_visual_textbox {
+			.title {
+				@include visual_common_title();
+				top: 520px;
+				text-align: center;
+				color: #fff;
+			}
+			.sub_text {
+				@include visual_common_subtext();
+				top: 650px;
+				color: #fff;
+			}
+			.samsung_appliances_btns {
+				position: relative;
+
+				.purchase_button {
+					@include common-btn();
+					position: absolute;
+					top: 730px;
+					left: 50%;
+					transform: translateX(-50%);
+					background-color: #fff;
+					color: #000;
+				}
+			}
+		}
+	}
+	.kitchen_samsung_appliances_box_visual {
+		position: relative;
+		.samsung_appliances-visual_img {
+			img {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+		.samsung_appliances_visual_textbox {
+			.title {
+				@include visual_common_title();
+				top: 520px;
+				text-align: center;
+			}
+			.sub_text {
+				@include visual_common_subtext();
+				top: 650px;
+			}
+			.samsung_appliances_btns {
+				position: relative;
+
+				.purchase_button {
+					@include common-btn();
+					position: absolute;
+					top: 730px;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+		}
+	}
+	.aircleaner_samsung_appliances_box_visual {
+		position: relative;
+		.samsung_appliances-visual_img {
+			img {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+		.samsung_appliances_visual_textbox {
+			.title {
+				@include visual_common_title();
+				top: 580px;
+				text-align: center;
+			}
+			.sub_text {
+				@include visual_common_subtext();
+				top: 650px;
+			}
+			.samsung_appliances_btns {
+				position: relative;
+
+				.purchase_button {
+					@include common-btn();
+					position: absolute;
+					top: 730px;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+		}
+	}
 }
 
 .galaxy_story-contents {
 	width: 100%;
+	height: 500px;
 	background-color: #fff;
 	display: flex;
 
@@ -826,34 +1383,51 @@ a {
 		width: 1450px;
 		margin: 80px auto;
 		display: flex;
-		flex-wrap: wrap;
 		justify-content: center;
+		position: relative;
+		top: 0;
+		left: 0;
 	}
 
 	.story_box_head {
-		width: 350px;
 		display: flex;
 
 		.box_head_textbox {
-			padding-top: 180px;
+			position: absolute;
+			top: 120px;
+			left: 0;
+
 			.box_head_title {
 				font-family: "Nanum Gothic", sans-serif;
-				font-size: 40px;
+				font-size: 42px;
 				font-weight: 600;
 			}
 		}
 	}
 	.samsung_story_img_box_content {
+		// position: absolute;
+		// top: 0;
+		// left: 50%;
+		// transform: translateX(-50%);
 		display: flex;
 		.samsung_stroy_img_box {
-			position: relative;
+			position: absolute;
+			top: 0;
+			left: 400px;
+
 			img {
 				width: 684px;
 				border-radius: 30px;
+				position: absolute;
+				top: 0;
+				left: 0;
 			}
 		}
 	}
 	.samsung_story_textbox {
+		position: absolute;
+		top: 0;
+		right: 0;
 		.title {
 			font-family: "Nanum Gothic", sans-serif;
 			font-size: 15px;
@@ -886,14 +1460,6 @@ a {
 			display: block;
 			border-bottom: 2px solid #000;
 			margin-top: 10px;
-		}
-		&:hover {
-			width: 500px;
-			height: 2px;
-			content: "";
-			display: block;
-			clear: both;
-			background-color: #121212;
 		}
 	}
 }
